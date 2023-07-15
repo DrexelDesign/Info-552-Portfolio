@@ -336,6 +336,32 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--gray);
+}
+
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+.content-grid .content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-color: var(--white);
+  grid-area: content;
+}
+
+#main-content-right .social-icons li a:link, #main-content-right .social-icons li a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
+#main-content-right .social-icons li a:hover, #main-content-right .social-icons li a:active {
+  color: var(--green);
+}
+
 /* =============
     Typography
 ============= */
@@ -365,9 +391,53 @@ textarea {
 /* =============
     Navigation
 ============= */
+.darkGreenLink:link, .darkGreenLink:visited {
+  color: var(--darkGreen);
+  text-decoration: none;
+}
+
+.darkGreenLink:hover, .darkGreenLink:active {
+  color: var(--green);
+}
+
+nav {
+  background-color: var(--green);
+}
+
 /* =============
     Header
 ============= */
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--lightGray);
+}
+footer #footer-bottom {
+  background-color: var(--charcoal);
+}
+footer #footer-bottom a:link, footer #footer-bottom a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+footer #footer-bottom a:hover, footer #footer-bottom a:active {
+  color: var(--green);
+}
+
+/* =============
+    Index
+============= */
+#index-left a:link, #index-left a:visited {
+  color: var(--darkGreen);
+  text-decoration: none;
+}
+#index-left a:hover, #index-left a:active {
+  color: var(--green);
+}
+
+/* =============
+    Research
+============= */
+#research-left img {
+  width: 100%;
+}

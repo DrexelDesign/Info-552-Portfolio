@@ -1,5 +1,33 @@
 /* =============
     Base
 ============= */
+body{
+    background-color: var(--gray);
+}
 
+.content-grid{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". content .";
 
+    .content-grid-item{
+        background-color: var(--white);
+        grid-area: content;
+    }
+}
+
+#main-content-right{
+    .social-icons{
+        li{
+            // love // hate
+            a:link, a:visited{
+                color: var(--black);
+                text-decoration: none;
+            }
+
+            a:hover, a:active{
+                color: var(--green);
+            }
+        }
+    }
+}

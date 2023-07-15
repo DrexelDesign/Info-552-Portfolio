@@ -1,0 +1,16 @@
+/* =============
+    Index
+============= */
+
+#index-left{
+
+    // love // hate
+    a:link, a:visited{
+        color: var(--darkGreen);
+        text-decoration: none;
+    }
+
+    a:hover, a:active{
+        color: var(--green);
+    }
+}
