@@ -10,11 +10,32 @@ body{
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". content .";
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     .content-grid-item{
         background-color: var(--white);
         grid-area: content;
     }
 }
+
+#main-content-grid{
+    @include lg{
+        display: grid;
+        grid-template-columns: 60% auto;
+        gap: 16px;
+    }
+
+    @include xl{
+        grid-template-columns: 70% auto;
+    }
+
+    @include xxl{
+        grid-template-columns: 75% auto;
+    }
+}
+
 
 #main-content-right{
     .social-icons{
