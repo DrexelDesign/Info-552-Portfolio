@@ -5,6 +5,20 @@ body{
     background-color: var(--gray);
 }
 
+p{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+
+    li{
+        list-style: none;
+    }
+}
+
 .content-grid{
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -38,6 +52,19 @@ body{
 
 
 #main-content-right{
+
+    border: 1px solid var(--charcoal);
+    margin: 150px 16px 16px;
+    padding: 16px;
+
+    img{
+        margin-top: -50px;
+        width: 150px;
+    }
+
+    h2{
+        padding-bottom: 16px;
+    }
     .social-icons{
         li{
             // love // hate

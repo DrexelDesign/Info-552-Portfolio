@@ -3,6 +3,12 @@
 ============= */
 footer{
     background-color: var(--lightGray);
+
+    h2{
+        margin: 24px 0 16px;
+    }
+
+
     @include md{
         display: grid;
         grid-template-columns: 50% auto;
@@ -12,20 +18,26 @@ footer{
         gap: 16px;
     }
 
+   
+
     #footer-left{
+        padding: 16px;
         @include md{
             grid-area: fl;
         }
     }
 
     #footer-right{
+        padding: 16px;
         @include md{
             grid-area: fr;
         }
     }
 
     #footer-bottom{
+        padding: 24px;
         background-color: var(--charcoal);
+
           // love // hate
         a:link, a:visited{
             color: var(--white);

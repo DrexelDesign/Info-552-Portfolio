@@ -3,6 +3,30 @@
 ============= */
 
 #index-left{
+    padding: 0 16px;
+
+    h1{
+        padding-bottom: 24px;
+    }
+
+    #index-quote{
+        padding-left: 16px;
+    }
+
+    p{
+        padding-bottom: 24px;
+    }
+
+    h2{
+        padding-bottom: 24px;
+    }
+
+    ul{
+        padding-left: 16px;
+        li{
+            list-style-type: disc;
+        }
+    }
 
     // love // hate
     a:link, a:visited{

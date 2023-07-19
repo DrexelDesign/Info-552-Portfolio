@@ -340,6 +340,19 @@ body {
   background-color: var(--gray);
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .content-grid {
   display: -ms-grid;
   display: grid;
@@ -382,6 +395,18 @@ body {
   }
 }
 
+#main-content-right {
+  border: 1px solid var(--charcoal);
+  margin: 150px 16px 16px;
+  padding: 16px;
+}
+#main-content-right img {
+  margin-top: -50px;
+  width: 150px;
+}
+#main-content-right h2 {
+  padding-bottom: 16px;
+}
 #main-content-right .social-icons li a:link, #main-content-right .social-icons li a:visited {
   color: var(--black);
   text-decoration: none;
@@ -396,19 +421,6 @@ body {
 h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-ul li {
-  list-style: none;
 }
 
 /* =============
@@ -453,11 +465,18 @@ nav {
 /* =============
     Header
 ============= */
+header {
+  padding: 48px 0;
+}
+
 /* =============
     Footer
 ============= */
 footer {
   background-color: var(--lightGray);
+}
+footer h2 {
+  margin: 24px 0 16px;
 }
 @media (min-width: 768px) {
   footer {
@@ -470,10 +489,16 @@ footer {
     gap: 16px;
   }
 }
+footer #footer-left {
+  padding: 16px;
+}
 @media (min-width: 768px) {
   footer #footer-left {
     grid-area: fl;
   }
+}
+footer #footer-right {
+  padding: 16px;
 }
 @media (min-width: 768px) {
   footer #footer-right {
@@ -481,6 +506,7 @@ footer {
   }
 }
 footer #footer-bottom {
+  padding: 24px;
   background-color: var(--charcoal);
 }
 footer #footer-bottom a:link, footer #footer-bottom a:visited {
@@ -514,6 +540,27 @@ footer #footer-bottom a:hover, footer #footer-bottom a:active {
 /* =============
     Index
 ============= */
+#index-left {
+  padding: 0 16px;
+}
+#index-left h1 {
+  padding-bottom: 24px;
+}
+#index-left #index-quote {
+  padding-left: 16px;
+}
+#index-left p {
+  padding-bottom: 24px;
+}
+#index-left h2 {
+  padding-bottom: 24px;
+}
+#index-left ul {
+  padding-left: 16px;
+}
+#index-left ul li {
+  list-style-type: disc;
+}
 #index-left a:link, #index-left a:visited {
   color: var(--darkGreen);
   text-decoration: none;
