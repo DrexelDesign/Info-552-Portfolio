@@ -3,7 +3,28 @@
 ============= */
 
 #research-left{
+    padding: 16px;
+
+    h1{
+        padding-bottom: 24px;
+    }
+
+    p{
+        padding-bottom: 24px;
+    }
+
     img{
         width: 100%;
+    }
+
+    ul{
+        padding-left: 16px;
+        li{
+            list-style-type: disc;
+
+            a{
+                margin-bottom: 16px;
+            }
+        }
     }
 }

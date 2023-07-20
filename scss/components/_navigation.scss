@@ -7,6 +7,7 @@
  .darkGreenLink:link, .darkGreenLink:visited{
     color: var(--darkGreen);
     text-decoration: none;
+    display: inline-block;
 }
 .darkGreenLink:hover, .darkGreenLink:active{
     color: var(--green);

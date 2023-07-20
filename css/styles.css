@@ -452,6 +452,7 @@ textarea {
 .darkGreenLink:link, .darkGreenLink:visited {
   color: var(--darkGreen);
   text-decoration: none;
+  display: inline-block;
 }
 
 .darkGreenLink:hover, .darkGreenLink:active {
@@ -564,6 +565,7 @@ footer #footer-bottom a:hover, footer #footer-bottom a:active {
 #index-left a:link, #index-left a:visited {
   color: var(--darkGreen);
   text-decoration: none;
+  margin-bottom: 16px;
 }
 #index-left a:hover, #index-left a:active {
   color: var(--green);
@@ -572,6 +574,24 @@ footer #footer-bottom a:hover, footer #footer-bottom a:active {
 /* =============
     Research
 ============= */
+#research-left {
+  padding: 16px;
+}
+#research-left h1 {
+  padding-bottom: 24px;
+}
+#research-left p {
+  padding-bottom: 24px;
+}
 #research-left img {
   width: 100%;
+}
+#research-left ul {
+  padding-left: 16px;
+}
+#research-left ul li {
+  list-style-type: disc;
+}
+#research-left ul li a {
+  margin-bottom: 16px;
 }
