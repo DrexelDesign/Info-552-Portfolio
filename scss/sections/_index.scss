@@ -7,24 +7,39 @@
 
     h1{
         padding-bottom: 24px;
+        font-family: 'Oswald', sans-serif;
+        font-size: rem-calc(24);
+        font-weight: 300;
+        letter-spacing: rem-calc(2);
     }
 
     #index-quote{
         padding-left: 16px;
+        font-style: italic;
+        border-left: 2px var(--gray) solid;
+        padding-bottom: 0px;
+        padding: 5px 0 5px 10px;
+        margin-bottom: 24px;
     }
 
     p{
         padding-bottom: 24px;
+        line-height: 1.5;
     }
 
     h2{
         padding-bottom: 24px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: rem-calc(18);
     }
 
     ul{
         padding-left: 16px;
         li{
             list-style-type: disc;
+            margin-bottom: 8px;
         }
     }
 
@@ -32,7 +47,7 @@
     a:link, a:visited{
         color: var(--darkGreen);
         text-decoration: none;
-        margin-bottom: 16px;
+        // margin-bottom: 16px;
     }
 
     a:hover, a:active{

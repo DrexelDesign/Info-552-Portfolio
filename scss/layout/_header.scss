@@ -3,4 +3,31 @@
 ============= */
 header{
     padding: 48px 0;
+    text-align: center;
+
+    a:link, a:visited{
+        color: var(--black);
+        transition: 0.25s;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: rem-calc(36);
+        letter-spacing: rem-calc(2);
+    }
+
+    a:hover, a:active{
+        color: var(--darkGreen);
+    }
+
+    p{
+        font-size: rem-calc(14);
+        font-weight: 300;
+        margin-top: 8px;
+        letter-spacing: rem-calc(1);
+        color: var(--charcoal);
+    }
+
+    nav{
+        display: none;
+    }
 }
