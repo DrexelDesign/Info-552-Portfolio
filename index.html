@@ -111,10 +111,8 @@
 					</section>
 
 					<aside id="main-content-right">
-						<img
-							src="img/profile.jpg"
-							alt="profile image of researcher"
-						/>
+						<!-- <img src="img/profile.jpg" alt="profile image of researcher"/> -->
+						<div id="profile-pic"></div>
 						<h2><a
 							href="https://en.gravatar.com/geekyartistlibrarian"
 							class="darkGreenLink"
@@ -170,7 +168,7 @@
 							</li>
 						</ul>
 
-						<a href="https://en.gravatar.com/geekyartistlibrarian"
+						<a href="https://en.gravatar.com/geekyartistlibrarian" id="view-portfolio-btn"
 							>View Full Portfolio
 							<i class="fa-sharp fa-regular fa-arrow-right"></i
 						></a>
@@ -180,37 +178,45 @@
 				<footer>
 					<section id="footer-left">
 						<article>
-							<h2>STARR’S DISSERTATION</h2>
+							<h2>- STARR’S DISSERTATION -</h2>
+							<div class="divide"></div>
 							<a
 								href="http://geekyartistlibrarian.pbworks.com/w/file/fetch/65308144/Dissertation_Approved_20130411.pdf"
-								>The Preparation of Academic Library
+								>• The Preparation of Academic Library
 								Administrators (PDF)</a
 							>
 
-							<h2>STARR’S CV</h2>
+							<h2>- STARR’S CV -</h2>
+							<div class="divide"></div>
 							<a
 								href="https://geekyartistlibrarian.files.wordpress.com/2018/03/pt-libraries-2018-hoffman-cv.pdf"
-								>The Preparation of Academic Library
-								Administrators (PDF)</a
+								>• 2018 CV for Dr. Starr Hoffman (PDF)</a
 							>
 						</article>
 					</section>
 
 					<section id="footer-right">
 						<article>
-							<h2>BLOG ARCHIVES</h2>
-							<label for="months">Select Month:</label>
-							<select name="months" id="months">
+							<h2>- BLOG ARCHIVES -</h2>
+							<!-- <label for="months">Select Month:</label> -->
+							<!-- <select name="months" id="months">
 								<option value="a2019">April 2019 (1)</option>
 								<option value="j2016">June 2016 (1)</option>
 								<option value="m2016">March 2016 (1)</option>
-							</select>
+							</select> -->
+
+							<select class="classic">
+								<option>Select Month:</option>
+								<option value="a2019">April 2019 (1)</option>
+								<option value="j2016">June 2016 (1)</option>
+								<option value="m2016">March 2016 (1)</option>
+							  </select>
 						</article>
 
 						<article>
-							<h2>BLOG CATEGORIES/TAGS</h2>
-							<label for="options">Select Category:</label>
-							<select name="options" id="options">
+							<h2>- BLOG CATEGORIES/TAGS -</h2>
+							<!-- <label for="options">Select Category:</label> -->
+							<select name="options" id="options" class="classic">
 								<option value="o1">Option 1</option>
 								<option value="o2">Option 2</option>
 								<option value="o3">Option 3</option>
@@ -220,7 +226,7 @@
 						<article>
 							<form action="#">
 								<input type="text" placeholder="Search..." />
-								<button>Search</button>
+								<button><i class="fa-solid fa-magnifying-glass"></i></button>
 							</form>
 						</article>
 					</section>
