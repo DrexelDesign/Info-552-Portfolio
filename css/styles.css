@@ -388,12 +388,6 @@ ul li {
     grid-template-columns: 70% auto;
   }
 }
-@media (min-width: 1440px) {
-  #main-content-grid {
-    -ms-grid-columns: 75% auto;
-    grid-template-columns: 75% auto;
-  }
-}
 
 #main-content-right {
   border: 1px solid var(--gray);
