@@ -1,9 +1,57 @@
 /* =============
     Header
 ============= */
+
 header{
     padding: 48px 0;
+    display: grid;
+    grid-template-areas: 
+    "burger"
+    "nav";
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--gray);
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+    top: 0;
+    left: 0;
     text-align: center;
+
+
+    @include lg{
+        grid-template-areas: "nav";
+        padding-bottom: 0;
+    }
+
+    #burger-container{
+        grid-area: burger;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--green);
+        padding: 16px 0;
+        
+
+        @include lg{
+            display: none;
+        }
+
+        button{
+            border: none;
+            background-color: transparent;
+            color: black;
+            font-size: rem-calc(16);
+            cursor: pointer;
+            font-weight: 600;
+
+            i{
+                padding-right: 8px;
+            }
+        }
+    }
+
+
 
     a:link, a:visited{
         color: var(--black);
@@ -25,9 +73,10 @@ header{
         margin-top: 8px;
         letter-spacing: rem-calc(1);
         color: var(--charcoal);
+        padding-bottom: 30px;
     }
 
     nav{
-        display: none;
+        grid-area: nav;
     }
 }

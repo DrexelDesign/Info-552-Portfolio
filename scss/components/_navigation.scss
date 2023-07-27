@@ -1,10 +1,13 @@
 /* =============
     Navigation
 ============= */
+.bold-link{
+    font-weight: 600;
+}
 
 // dark green / light green link
- // love // hate
- .darkGreenLink:link, .darkGreenLink:visited{
+// love // hate
+.darkGreenLink:link, .darkGreenLink:visited{
     color: var(--darkGreen);
     text-decoration: none;
     display: inline-block;
@@ -13,12 +16,52 @@
     color: var(--green);
 }
 
-
-.bold-link{
-    font-weight: 600;
+html{
+    scroll-behavior: smooth;
 }
 
+.show-menu{
+    display: block !important;
+}
 
 nav{
     background-color: var(--green);
+    display: none;
+
+    @include lg{
+        display: block;
+        width: 100%;
+    }
+
+    ul{
+
+        @include lg{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            padding: 24px 0;
+            border-bottom: 2px solid var(--darkGreen);
+        }
+
+        li{
+            padding: 0 0 24px 24px;
+            text-align: left;
+
+            @include lg{
+                padding: 0;
+            }
+
+            a:link, a:visited{  
+                font-size: rem-calc(14);
+                font-weight: 400;
+
+                &:hover, &:active{
+
+
+                }
+            }
+            
+        }
+    }
 }
