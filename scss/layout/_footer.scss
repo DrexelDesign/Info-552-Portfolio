@@ -121,5 +121,9 @@ footer{
         @include md{
             grid-area: fb;
         }
+
+        #validator-logo{
+            margin-top: 24px;
+        }
     }
 }

@@ -804,6 +804,9 @@ footer #footer-bottom a:hover, footer #footer-bottom a:active {
     -ms-grid-column-span: 3;
   }
 }
+footer #footer-bottom #validator-logo {
+  margin-top: 24px;
+}
 
 /* =============
     Index
